@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Corp. Portal Admin</title>
+    <script src="js/jquery.min.js"></script>
+    <!--photoResize start-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js?ver=1.7.0" ></script>
+    <script src="js/jquery.mu.image.resize.js"></script>
+    <!--photoResize end-->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+
+    <link href="css/all-admin.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+      $(document).ready(function(){ 
+        $.get("topNav.html", function(data) {
+        $("#topNav").html(data);
+        });
+      });  
+
+      $(document).ready(function(){ 
+        $.get("leftNav.html", function(data) {
+        $("#leftNav").html(data);
+        });
+      });  
+
+
+    </script>
+<script type="text/javascript">
+          //contractDelete_PopWd
+          $(function(){    
+              $(".contractDelete_PopWd").click(function() {
+                  $('#contractDelete_PopWd').toggleClass("PopWdshow");
+                  $('#blockOverlay').toggleClass("blockshow");
+              });
+          });
+
+          //for all popwindow
+          $(function(){    
+              $(".btnClose").click(function() {
+                  $('.PopupWindow').removeClass("PopWdshow");
+                  $('#blockOverlay').removeClass("blockshow");
+              });
+          });
+          $(function(){    
+              $("#blockOverlay").click(function() {
+                  $('.PopupWindow').removeClass("PopWdshow");
+                  $('#blockOverlay').removeClass("blockshow");
+              });
+          });
+          $(function(){    
+              $(".popCancelBtn").click(function() {
+                  $('.PopupWindow').removeClass("PopWdshow");
+                  $('#blockOverlay').removeClass("blockshow");
+              });
+          });
+        
+
+
+
+
+
+</script>
+  </head>
+  <body>
+    <div class="wrapper-admin">
+      <div id="topNav" class="topNav">
+      </div><!--topNav-->
+      <div id="leftNav"  class="leftNav">
+      </div><!--leftNav-->
+      <div class="content">
+        <div class="bread">
+          <span class="icon icon-contract"></span>
+          <a href="contract.html" target="_self">Contract</a><span class="line">
+        </div>
+        <div class="contractDiv">
+            <div class="functionBar">
+              <div class="searchBar">
+                <input placeholder="File Name" class="textInput">
+                <a href="#" target="_self"  class="deleteBtn"></a>
+                <a href="#" target="_self"  class="searchBtn"></a>
+                <ul style="display:none;">
+                  <li><a href="#">aaaa</a></li>
+                  <li><a href="#">aabbbbbaabbbbbaabbbbbaabbbbbaabbbbbaabbbbb</a></li>
+                  <li><a href="#">aacccc</a></li>
+                  <li><a href="#">aaaa</a></li>
+                  <li><a href="#">aabbbbb</a></li>
+                  <li><a href="#">aacccc</a></li>
+                </ul>
+              </div><!--searchBar-->
+              <a href="contractAdd.html" target="_self"  class="blueBtn">Add Contract</a>
+              <div class="clear"></div>
+
+            </div><!--functionBar-->
+            <div class="tableBox">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>File Name</th>
+                    <th>Owner</th>
+                    <th>Created Date</th>
+                    <th>Accept Status</th>
+                    <th>Function</th>
+                  </tr>
+                  <tr>
+                    <th colspan="5"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>AAA</span></td>
+                    <td><span>1001</span></td>
+                    <td><span>2020-05-20 18:16:11</span></td>
+                    <td><span><span class="txtGray">Accept</span></span></td>
+                    <td>
+                      <a href="#" target="_self"  class="downloadBtn"></a>
+                      <a href="#" target="_self"  class="delete2Btn contractDelete_PopWd"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span>AAA</span></td>
+                    <td><span>1001</span></td>
+                    <td><span>2020-05-20 18:16:11</span></td>
+                    <td><span><span class="txtRed">Not Accept</span></span></td>
+                    <td>
+                      <a href="#" target="_self"  class="downloadBtn"></a>
+                      <a href="#" target="_self"  class="delete2Btn contractDelete_PopWd"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span>AAA</span></td>
+                    <td><span>1001</span></td>
+                    <td><span>2020-05-20 18:16:11</span></td>
+                    <td><span><span class="txtGray">Accept</span></span></td>
+                    <td>
+                      <a href="#" target="_self"  class="downloadBtn"></a>
+                      <a href="#" target="_self"  class="delete2Btn contractDelete_PopWd"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span>AAA</span></td>
+                    <td><span>1001</span></td>
+                    <td><span>2020-05-20 18:16:11</span></td>
+                    <td><span><span class="txtGray">Accept</span></span></td>
+                    <td>
+                      <a href="#" target="_self"  class="downloadBtn"></a>
+                      <a href="#" target="_self"  class="delete2Btn contractDelete_PopWd"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span>AAA</span></td>
+                    <td><span>1001</span></td>
+                    <td><span>2020-05-20 18:16:11</span></td>
+                    <td><span><span class="txtRed">Not Accept</span></span></td>
+                    <td>
+                      <a href="#" target="_self"  class="downloadBtn"></a>
+                      <a href="#" target="_self"  class="delete2Btn contractDelete_PopWd"></a>
+                    </td>
+                  </tr>
+                  
+
+                </tbody>
+              </table>
+              
+            </div><!--tableBox-->
+            <div class="pageBar">
+              <div>
+                1-5&nbsp;of&nbsp;5</span>
+                <select class="select">
+                  <option>5</option>
+                </select>
+              </div>
+              <div>
+                <button class="preBtn" disabled></button>
+                <button class="nextBtn" disabled></button>
+              </div>
+            </div><!--pageBar-->
+        </div><!--contractDiv-->
+      </div><!--content-->
+    </div><!--end of wrapper-->
+
+<div id="contractDelete_PopWd" class="PopupWindow">
+    <div class="PopupFrame" >
+        <div class="popTitle clearfix"><h1>Delete File</h1><a class="btnClose" href="#"></a></div>
+        <div class="pop_content">
+          <p>Are you sure to delete this file(AAA)?</p>
+          <div class="popBtnBar">
+            <a href="#" target="_self"  class="blueBtn popCancelBtn">Cancel</a>
+            <a href="#" target="_self"  class="red2Btn" >Delete</a>
+          </div>
+    
+        </div><!--pop_content-->
+    </div><!--frame-->
+</div><!--PopupWindow-->
+
+<div id="blockOverlay"></div>
+
+
+  </body>
+</html>

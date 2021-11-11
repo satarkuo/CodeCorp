@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Corp. Portal Admin</title>
+    <script src="js/jquery.min.js"></script>
+    <!--photoResize start-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js?ver=1.7.0" ></script>
+    <script src="js/jquery.mu.image.resize.js"></script>
+    <!--photoResize end-->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+
+    <link href="css/all-admin.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+      $(document).ready(function(){ 
+        $.get("topNav.html", function(data) {
+        $("#topNav").html(data);
+        });
+      });  
+
+      $(document).ready(function(){ 
+        $.get("leftNav.html", function(data) {
+        $("#leftNav").html(data);
+        });
+      });  
+
+
+    </script>
+  </head>
+  <body>
+    <div class="wrapper-admin">
+      <div id="topNav" class="topNav">
+      </div><!--topNav-->
+      <div id="leftNav"  class="leftNav">
+      </div><!--leftNav-->
+      <div class="content">
+        <div class="bread">
+          <span class="icon icon-role"></span>
+          <a href="permissions.html" target="_blank">Role & Permissions</a><span class="line">/</span><a href="permissionsEdit.html" target="_blank">Edit</a>
+        </div>
+        <div class="permissionsEditDiv">
+          <div class="rowRole">
+            <div class="tit">Group Name</div>
+            <div class="con">
+              <input type="text" class="textInput" disabled>
+            </div>
+            <div class="tit">Author Name</div>
+            <div class="con">
+              <input type="text" class="textInput" disabled>
+            </div>
+          </div><!--rowRole-->
+          <div class="rowPer">
+            <div class="perBox">
+              <h4><span class="icon icon-dashboard"></span>Dashboard</h4>
+              <div class="perCon">
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="Dashboard-Enable" name="Dashboard" checked/>
+                    <label for="Dashboard-Enable">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Enable
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="Dashboard-Modify" name="Dashboard"/>
+                    <label for="Dashboard-Modify">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Modify
+                    </label>
+                  </div>
+                </p>
+              </div><!--perCon-->
+            </div><!--perBox-->
+            <div class="perBox">
+              <h4><span class="icon icon-files"></span>Files</h4>
+              <div class="perCon">
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="files-Enable" name="files" checked/>
+                    <label for="files-Enable">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Enable
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="files-Modify" name="files"/>
+                    <label for="files-Modify">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Modify
+                    </label>
+                  </div>
+                </p>
+              </div><!--perCon-->
+            </div><!--perBox-->
+            <div class="perBox">
+              <h4><span class="icon icon-sdks"></span>SDKs</h4>
+              <div class="perCon">
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="SDKs-Enable" name="SDKs" checked/>
+                    <label for="SDKs-Enable">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Enable
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="SDKs-Modify" name="SDKs" checked/>
+                    <label for="SDKs-Modify">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Modify
+                    </label>
+                  </div>
+                </p>
+              </div><!--perCon-->
+            </div><!--perBox-->
+            <div class="perBox">
+              <h4><span class="icon icon-customers"></span>Customers</h4>
+              <div class="perCon">
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="customers-Enable" name="customers" checked/>
+                    <label for="customers-Enable">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Enable
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="customers-Modify" name="customers" checked/>
+                    <label for="customers-Modify">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Modify
+                    </label>
+                  </div>
+                </p>
+              </div><!--perCon-->
+            </div><!--perBox-->
+            <div class="perBox">
+              <h4><span class="icon icon-doc"></span>Documentations</h4>
+              <div class="perCon">
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="Documentations-Enable" name="Documentations" checked/>
+                    <label for="Documentations-Enable">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Enable
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="Documentations-Modify" name="Documentations" checked/>
+                    <label for="Documentations-Modify">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Modify
+                    </label>
+                  </div>
+                </p>
+              </div><!--perCon-->
+            </div><!--perBox-->
+            <div class="perBox">
+              <h4><span class="icon icon-users"></span>Users & Groups</h4>
+              <div class="perCon">
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="users-Enable" name="users" checked/>
+                    <label for="users-Enable">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Enable
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="users-Modify" name="users"/>
+                    <label for="users-Modify">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Modify
+                    </label>
+                  </div>
+                </p>
+              </div><!--perCon-->
+            </div><!--perBox-->
+            <div class="perBox">
+              <h4><span class="icon icon-role"></span>Role & Permissions</h4>
+              <div class="perCon">
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="role-Enable" name="role" checked/>
+                    <label for="role-Enable">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Enable
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="role-Modify" name="role"/>
+                    <label for="role-Modify">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Modify
+                    </label>
+                  </div>
+                </p>
+              </div><!--perCon-->
+            </div><!--perBox-->
+            <div class="perBox">
+              <h4><span class="icon icon-setting"></span>Setting</h4>
+              <div class="perCon">
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="setting-Enable" name="setting" checked/>
+                    <label for="setting-Enable">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Enable
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <div class="checkBox">
+                    <input type="checkbox" id="setting-Modify" name="setting"/>
+                    <label for="setting-Modify">
+                      <span class="labelGray"></span>
+                      <span class="labelRed"></span>
+                      Modify
+                    </label>
+                  </div>
+                </p>
+              </div><!--perCon-->
+            </div><!--perBox-->
+
+          </div><!--rowPer-->
+          <div class="clear"></div>
+          <div class="rowBtn">
+            <a href="permissions.html" class="redBtn">Save</a>
+            <a href="permissions.html" class="grayBtn">Back</a>
+          </div>
+        </div><!--permissionsEditDiv-->
+      </div><!--content-->
+    </div><!--end of wrapper-->
+
+  </body>
+</html>

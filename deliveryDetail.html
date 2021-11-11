@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Corp. Portal Admin</title>
+    <script src="js/jquery.min.js"></script>
+    <!--photoResize start-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js?ver=1.7.0" ></script>
+    <script src="js/jquery.mu.image.resize.js"></script>
+    <!--photoResize end-->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+
+    <link href="css/all-admin.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+      $(document).ready(function(){ 
+        $.get("topNav.html", function(data) {
+        $("#topNav").html(data);
+        });
+      });  
+
+      $(document).ready(function(){ 
+        $.get("leftNav.html", function(data) {
+        $("#leftNav").html(data);
+        });
+      });  
+
+
+    </script>
+  </head>
+  <body>
+    <div class="wrapper-admin">
+      <div id="topNav" class="topNav">
+      </div><!--topNav-->
+      <div id="leftNav"  class="leftNav">
+      </div><!--leftNav-->
+      <div class="content">
+        <div class="bread">
+          <span class="icon icon-delivery"></span>
+          <a href="delivery.html" target="_self">Delivery</a><span class="line">/</span><a href="deliveryAdd.html" target="_self">Detail</a>
+        </div>
+        <div class="deliveryDetailDiv">
+            <div class="fileBox">
+              <div class="con">
+                <p>License Type:EDK Library<br/>
+                  Expiration Date:2020-05-28
+                </p>
+              </div><!--con-->
+              <div class="con">
+                <a href="#" class="deleteTxtBtn">Delete</a>
+                <a href="deliveryEdit.html" class="EditTxtBtn">Edit</a>
+              </div><!--con-->
+            </div><!--fileBox-->
+            <div class="fileBox">
+              <h4>File Name:name</h4>
+              <div class="con">
+                <p>License Type:Customize Library<br/>Expiration Date:2020-05-28
+                </p>
+              </div><!--con-->
+              <div class="con">
+                <a href="#" class="deleteTxtBtn">Delete</a>
+                <a href="deliveryEdit.html" class="EditTxtBtn">Edit</a>
+                <a href="#" class="downloadTxtBtn">Download</a>
+              </div><!--con-->
+            </div><!--fileBox-->
+            <div class="fileBox">
+              <h4>File Name:name</h4>
+              <div class="con">
+                <p>License Type:EDK License Key<br/>
+                  Customer ID:test<br/>
+                  Expiration Date:2020-05-28
+                </p>
+              </div><!--con-->
+              <div class="con">
+                <a href="#" class="deleteTxtBtn">Delete</a>
+                <a href="deliveryEdit.html" class="EditTxtBtn">Edit</a>
+              </div><!--con-->
+            </div><!--fileBox-->
+            <div class="fileBox">
+              <h4>File Name:name</h4>
+              <div class="con">
+                <p>License Type:Gemalto License Key<br/>
+                  License String:123<br/>
+                  Product Level:<br/>
+                  Expiration Date:2020-05-28
+                </p>
+              </div><!--con-->
+              <div class="con">
+                <a href="#" class="deleteTxtBtn">Delete</a>
+                <a href="deliveryEdit.html" class="EditTxtBtn">Edit</a>
+              </div><!--con-->
+            </div><!--fileBox-->
+            <div class="fileBox">
+              <h4>File Name:name</h4>
+              <div class="con">
+                <p>License Type:Soraco License Key<br/>
+                  License String:123<br/>
+                  Product Level:EL2<br/>
+                  Expiration Date:2020-06-04 13:19:02
+                </p>
+              </div><!--con-->
+              <div class="con">
+                <a href="#" class="deleteTxtBtn">Delete</a>
+                <a href="deliveryEdit.html" class="EditTxtBtn">Edit</a>
+              </div><!--con-->
+            </div><!--fileBox-->
+            <div class="fileBox">
+              <h4>File Name:name</h4>
+              <div class="con">
+                <p>License Type:Sample project<br/>
+                  Expiration Date:2020-05-28
+                </p>
+              </div><!--con-->
+              <div class="con">
+                <a href="#" class="deleteTxtBtn">Delete</a>
+                <a href="deliveryEdit.html" class="EditTxtBtn">Edit</a>
+                <a href="#" class="downloadTxtBtn">Download</a>
+              </div><!--con-->
+            </div><!--fileBox-->
+            <div class="fileBox">
+              <h4>File Name:name</h4>
+              <div class="con">
+                <p>License Type:Document<br/>
+                  Expiration Date:2020-05-28
+                </p>
+              </div><!--con-->
+              <div class="con">
+                <a href="#" class="deleteTxtBtn">Delete</a>
+                <a href="deliveryEdit.html" class="EditTxtBtn">Edit</a>
+                <a href="#" class="downloadTxtBtn">Download</a>
+              </div><!--con-->
+            </div><!--fileBox-->
+          <div class="rowBtn">
+            
+            <a href="delivery.html" class="grayBtn">Back</a>
+          </div>
+        </div><!--usersAddDiv-->
+      </div><!--content-->
+    </div><!--end of wrapper-->
+
+  </body>
+</html>

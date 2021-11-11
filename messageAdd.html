@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Corp. Portal Admin</title>
+    <script src="js/jquery.min.js"></script>
+    <!--photoResize start-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js?ver=1.7.0" ></script>
+    <script src="js/jquery.mu.image.resize.js"></script>
+    <!--photoResize end-->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+
+    <link href="css/all-admin.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+      $(document).ready(function(){ 
+        $.get("topNav.html", function(data) {
+        $("#topNav").html(data);
+        });
+      });  
+
+      $(document).ready(function(){ 
+        $.get("leftNav.html", function(data) {
+        $("#leftNav").html(data);
+        });
+      });  
+
+
+    </script>
+  </head>
+  <body>
+    <div class="wrapper-admin">
+      <div id="topNav" class="topNav">
+      </div><!--topNav-->
+      <div id="leftNav"  class="leftNav">
+      </div><!--leftNav-->
+      <div class="content">
+        <div class="bread">
+          <span class="icon icon-message"></span>
+          <a href="message.html" target="_self">Message</a><span class="line">/</span><a href="messageAdd.html" target="_self">Add New</a>
+        </div>
+        <div class="messageAddDiv">
+
+          <div class="shareBox">
+            <h4>Share</h4>
+            <div class="con">
+              <div class="radioBox">
+                  <input type="radio" id="all" name="msg" checked>
+                  <label for="all">
+                    <span class="labelGray"></span>
+                    <span class="labelRed"></span>
+                    All
+                  </label>
+                  <input type="radio" id="customer" name="msg" checked>
+                  <label for="customer">
+                    <span class="labelGray"></span>
+                    <span class="labelRed"></span>
+                    Customer
+                  </label>
+                  <input type="radio" id="Group" name="msg">
+                  <label for="Group">
+                    <span class="labelGray"></span>
+                    <span class="labelRed"></span>
+                    Group
+                  </label>
+              </div>
+              <!--
+              上方radiobtn選all時同時隱藏div customerBar & groupBar ;
+              上方radiobtn選costomer時則顯示customerbar、隱藏groupBar
+              上方radiobtn選group時則顯示groupBar、隱藏customerBar ;
+              -->
+              <!--for customer start-->
+              <div class="customerBar">
+                <div class="searchBar">
+                  <input placeholder="Account" class="textInput">
+                  <a href="#" target="_self"  class="deleteBtn"></a>
+                  <a href="#" target="_self"  class="blueBtn">Add</a>
+                  <ul style="display:none;">
+                    <li><a href="#">aaaa</a></li>
+                    <li><a href="#">aabbbbbaabbbbbaabbbbbaabbbbbaabbbbbaabbbbb</a></li>
+                    <li><a href="#">aacccc</a></li>
+                    <li><a href="#">aaaa</a></li>
+                    <li><a href="#">aabbbbb</a></li>
+                    <li><a href="#">aacccc</a></li>
+                  </ul>
+                </div><!--searchBar-->
+                <div class="tableBox">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Account</th>
+                        <th></th>
+                      </tr>
+                      <tr>
+                        <th colspan="2"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span>RRR</span></td>
+                        <td><a href="#" class="deleteTxtBtn">Delete</a></td>
+                      </tr>
+                      <tr>
+                        <td><span>RRR</span></td>
+                        <td><a href="#" class="deleteTxtBtn">Delete</a></td>
+                      </tr>
+                      <tr>
+                        <td><span>RRR</span></td>
+                        <td><a href="#" class="deleteTxtBtn">Delete</a></td>
+                      </tr>
+                      <tr>
+                        <td><span>RRR</span></td>
+                        <td><a href="#" class="deleteTxtBtn">Delete</a></td>
+                      </tr>
+                      <tr>
+                        <td><span>RRR</span></td>
+                        <td><a href="#" class="deleteTxtBtn">Delete</a></td>
+                      </tr>
+                    </tbody>
+                  </table>      
+                </div><!--tableBox-->
+                <div class="clear"></div>
+                <div class="pageBar">
+                    <div>
+                      1-5&nbsp;of&nbsp;26</span>
+                      <select class="select">
+                        <option>5</option>
+                      </select>
+                    </div>
+                    <div>
+                      <button class="preBtn"></button>
+                      <button class="nextBtn"></button>
+                    </div>
+                </div><!--pageBar-->
+              </div><!--customerBar-->
+
+
+              <!--for customer end-->
+              <!--for group start
+
+              <div class="searchBar groupBar">
+                <input placeholder="" class="textInput">
+                <span class="msg">Wrong Message.</span>
+                <ul style="display:none;">
+                  <li><a href="#">aaaa</a></li>
+                  <li><a href="#">aabbbbbaabbbbbaabbbbbaabbbbbaabbbbbaabbbbb</a></li>
+                  <li><a href="#">aacccc</a></li>
+                  <li><a href="#">aaaa</a></li>
+                  <li><a href="#">aabbbbb</a></li>
+                  <li><a href="#">aacccc</a></li>
+                </ul>
+              </div>
+
+              <!--for group end-->
+            </div><!--con-->
+            <div class="clear"></div>
+          </div><!--shareBox-->
+          <div class="messageBox">
+              <h4>Message</h4>
+              <div class="tit">title</div>
+              <div class="con">
+                <input placeholder="Title" class="textInput">
+                <!--<span class="msg">Wrong Message.</span>-->
+              </div><!--con-->
+              <div class="clear"></div>
+              <div class="tit">Content</div>
+              <div class="con">
+                <div class="rowDiv inputDiv" style="height:395px;">
+                <!--html編輯器可放於此-->
+                
+                
+              </div>
+              </div><!--con-->
+              <div class="clear"></div>
+          </div><!--messageBox-->
+          <div class="clear"></div>
+          <div class="rowBtn">
+            <a href="messageAdd.html" class="redBtn">Save</a>
+            <a href="message.html" class="grayBtn">Back</a>
+          </div>
+        </div><!--messageAddDiv-->
+      </div><!--content-->
+    </div><!--end of wrapper-->
+
+  </body>
+</html>

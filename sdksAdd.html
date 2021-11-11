@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Corp. Portal Admin</title>
+    <script src="js/jquery.min.js"></script>
+    <!--photoResize start-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js?ver=1.7.0" ></script>
+    <script src="js/jquery.mu.image.resize.js"></script>
+    <!--photoResize end-->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+
+    <link href="css/all-admin.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+      $(document).ready(function(){ 
+        $.get("topNav.html", function(data) {
+        $("#topNav").html(data);
+        });
+      });  
+
+      $(document).ready(function(){ 
+        $.get("leftNav.html", function(data) {
+        $("#leftNav").html(data);
+        });
+      });  
+
+
+    </script>
+  </head>
+  <body>
+    <div class="wrapper-admin">
+      <div id="topNav" class="topNav">
+      </div><!--topNav-->
+      <div id="leftNav"  class="leftNav">
+      </div><!--leftNav-->
+      <div class="content">
+        <div class="bread">
+          <span class="icon icon-sdks"></span>
+          <a href="sdks.html" target="_blank">SDKs</a><span class="line">/</span><a href="sdksAdd.html" target="_blank">Add New</a>
+        </div>        
+        <div class="sdksAddDiv">
+          <div class="rowLeft">
+            <div class="rowDiv">
+              <div class="tit">SDK Type</div>
+              <div class="con">
+                <select class="select">
+                  <option>Select Type</option>
+                </select>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="rowDiv">
+              <div class="tit">File Name</div>
+              <div class="con">
+                <input type="text" class="textInput">
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="rowDiv">
+              <div class="tit">Version</div>
+              <div class="con">
+                <input type="text" class="textInput">
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="rowDiv">
+              <div class="tit">Release Notes</div>
+              <div class="con">
+                <textarea class="textInput"></textarea>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="rowDiv">
+              <div class="tit">Upload File</div>
+              <div class="con">
+                <span class="filename">testtesttesttesttesttest.png</span>
+                <a href="#" target="_self"  class="uploadTxtBtn">Upload</a>
+
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div><!--rowLeft-->
+          <div class="rowBtn">
+            <a href="sdks.html" class="redBtn">Save</a>
+            <a href="sdks.html" class="grayBtn">Back</a>
+          </div>
+        </div><!--usersAddDiv-->
+      </div><!--content-->
+    </div><!--end of wrapper-->
+
+  </body>
+</html>

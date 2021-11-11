@@ -1,0 +1,54 @@
+        <!--photoResize-->
+        <script>
+          $(function(){
+            $(".photoImg").muImageResize({width: 45, height:45});
+
+          });
+        </script>
+        <script>
+          $(function(){    
+              $(".mMenuBtn").click(function() {
+                  $('body').removeClass("toggled_m");
+                  $('body').toggleClass("toggled");
+              });
+          });
+        
+        </script>
+
+
+        <div class="logoBox">
+          <a class="mMenuBtn mMenuBtn_close">
+            <span class="l1"></span>
+            <span class="l2"></span>
+            <span class="l3"></span>
+          </a>
+          <img src="images/logo.png" class="img-logo">
+        </div>
+        <!--
+        <a href="profile.html" target="_self" class="a-pro ">
+          <span class="r"></span>
+          <span class="photo">
+            <img src="images/user-photo.jpg"  class="photoImg"></span>
+          <span class="name">Hi, RayRayRayRayRayRay</span>
+        </a>
+        -->
+        <ul class="leftMenu">
+          <li ><a href="dashboard.html" target="_self" class="a-dashboard"><span class="r"></span><span class="text">Dashboard</span></a></li>
+          <li><a href="files.html" target="_self" class="a-files"><span class="r"></span><span class="text">Files</span></a>
+          </li>
+          <li class="now"><a href="delivery.html" target="_self" class="a-delivery"><span class="r"></span><span class="text">Delivery</span></a></li>
+          <li><a href="sdks.html" target="_self" class="a-sdks"><span class="r"></span><span class="text">SDKs</span></a></li>
+          <li><a href="customers.html" target="_self" class="a-customers"><span class="r"></span><span class="text">Customers</span></a></li>
+          <li><a href="documentations.html" target="_self" class="a-doc"><span class="r"></span><span class="text">Documentations</span></a></li>
+          <li><a href="users.html" target="_self" class="a-users"><span class="r"></span><span class="text">Users & Groups</span></a></li>
+          <li><a href="permissions.html" target="_self" class="a-role"><span class="r"></span><span class="text">Role & Permissions</span></a></li>
+          <li><a href="contract.html" target="_self" class="a-contract"><span class="r"></span><span class="text">Contract</span></a></li>
+          <!--
+          <li><a href="message.html" target="_self" class="a-message"><span class="r"></span><span class="text">Message</span></a>
+          </li>
+          -->
+          <li><a href="#" target="_self" class="a-support"><span class="r"></span><span class="text">Support</span></a>
+          </li>
+          <li><a href="setting.html" target="_self" class="a-setting"><span class="r"></span><span class="text">Settings</span></a></li>
+          <li><a href="#" target="_self" class="a-logout"><span class="r"></span><span class="text">Logout</span></a></li>
+        </ul>

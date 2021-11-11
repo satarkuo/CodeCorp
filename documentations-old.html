@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Corp. Portal Admin</title>
+    <script src="js/jquery.min.js"></script>
+    <!--photoResize start-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js?ver=1.7.0" ></script>
+    <script src="js/jquery.mu.image.resize.js"></script>
+    <!--photoResize end-->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+
+    <link href="css/all-admin.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+      $(document).ready(function(){ 
+        $.get("topNav.html", function(data) {
+        $("#topNav").html(data);
+        });
+      });  
+
+      $(document).ready(function(){ 
+        $.get("leftNav.html", function(data) {
+        $("#leftNav").html(data);
+        });
+      });  
+
+
+    </script>
+  </head>
+  <body>
+    <div class="wrapper-admin">
+      <div id="topNav" class="topNav">
+      </div><!--topNav-->
+      <div id="leftNav"  class="leftNav">
+      </div><!--leftNav-->
+      <div class="content">
+        <div class="bread">
+          <span class="icon icon-doc"></span>
+          <a href="documentations.html" target="_blank">Documentations</a><span class="line">
+        </div>
+        <div class="commonDiv">
+            <div class="tableBox">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>File Name</th>
+                    <th>Group</th>
+                    <th>Author</th>
+                    <th>Update Date</th>
+                    <th>Function</th>
+                  </tr>
+                  <tr>
+                    <th colspan="5"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>EDK Key SOP</span></td>
+                    <td><span>Operations</span></td>
+                    <td><span>Jana Buck</span></td>
+                    <td><span>2020-05-20</span></td>
+                    <td>
+                      <a href="#" target="_self"  class="delete2Btn"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span>EDK Key SOP</span></td>
+                    <td><span>Operations</span></td>
+                    <td><span>Jana Buck</span></td>
+                    <td><span>2020-05-20</span></td>
+                    <td>
+                      <a href="#" target="_self"  class="delete2Btn"></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+            </div><!--tableBox-->
+            <div class="pageBar">
+              <div>
+                1-2&nbsp;of&nbsp;2</span>
+                <!--select 超過5筆selct才顯示
+                <select class="select">
+                  <option>5</option>
+                </select>
+              -->
+              </div>
+              <div>
+                <button class="preBtn" disabled></button>
+                <button class="nextBtn" disabled></button>
+              </div>
+            </div><!--pageBar-->
+        </div><!--sdksDiv-->
+      </div><!--content-->
+    </div><!--end of wrapper-->
+
+  </body>
+</html>
